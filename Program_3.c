@@ -9,9 +9,15 @@
 #include<stdio.h> 
 int main()
 {
-  //Declare all the variables[row, col, array a(2D array), i] used in the code
-   //Read the Value of row and coloumn of the matrix (i.e size of matrix) using scanf statement
-   //Read the elements of matrix a using nested for loop and scanf statment
-   //Print the elements of matrix a using nested for loop and printf statment as per the above specified format
+ int a[5],i,sum=0;
+ printf("Enter the Array Elements\n");
+ 
+ for(i=0;i<5;i++)
+ {
+   scanf("%d",&a[i]);
+  sum = sum + a[i]; 
+ }
+ printf("Sum of Array is %d",sum);
+  
   return 0;
 }
