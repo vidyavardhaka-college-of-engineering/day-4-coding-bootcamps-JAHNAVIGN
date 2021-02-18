@@ -17,7 +17,8 @@ int main()
   
   for(i=0;i<5;i++)
    scanf("%d",&arr[i]);
-  
+  printf("Elements are");
+   
    for(i=0;i<5;i++)
    printf("%d\n",arr[i]);
       
