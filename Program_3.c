@@ -9,15 +9,24 @@
 #include<stdio.h> 
 int main()
 {
- int a[5],i,sum=0;
- printf("Enter the Array Elements\n");
+ int disp[2][3];
  
- for(i=0;i<5;i++)
- {
-   scanf("%d",&a[i]);
-  sum = sum + a[i]; 
+ int i, j;
+ for(i=0; i<2; i++){
+    for(j=0;j<3;j++) {
+       printf("Enter the value for disp[%d][%d]:" , i, j);
+       scanf("%d" , &disp[i][j]);
+    }
  }
- printf("Sum of Array is %d",sum);
+ printf("The Dimensional array elements:\n");
+ for(i=0; i<2; i++) {
+   for(j=0;j<3;j++) {
+     printf("%d ", disp[i][j]);
+     if(j==2){
+       printf("\n");
+     }
+   }
+ }
   
   return 0;
 }

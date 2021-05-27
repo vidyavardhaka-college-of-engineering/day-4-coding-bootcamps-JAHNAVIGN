@@ -15,28 +15,20 @@
 int main()
 {
    
-   int N, a[10],b[10],i;
-   printf("Enter the value of N\n");
-    scanf("%d",&N);
+   int arr1[100],arr2[100];
+   int i, n;
 
-    printf("Enter the array A elements\n");
-    for(i=0;i<10;i++)
+    printf("\n\nCopy the elements one array into another array:\n");
+    printf("_________________________________\n");
+    
+    printf("Input the number of elements to be stored in the array:");
+    scanf("%d",&n);
+    
+    printf("Input %d elements in the array:\n",n);
+    for(i=0;i<n;i++)
     {
-      scanf("%d",&a[i]);
-    } 
-    for(i=0;i<10;i++)
-    {
-      b[i]=a[i];
-    }
-     printf("The elements stored in the first array A are:\n");
-    for(i=0;i<10;i++)
-    {
-      printf("%d\t",a[i]);
-    }
-     printf("The elements stored in the second array B are:\n");
-    for(i=0;i<10;i++)
-    {
-      printf("%d\t",b[i]);
-    }
+    printf("element %d:",i);
+    scanf("%d",&arr1[i]);
+     }
    return 0; 
 }
