@@ -7,15 +7,18 @@
 #include <stdio.h>
 int main()
 {
-   int a[5],i,sum=0;
- printf("Enter the Array Elements\n");
- 
- for(i=0;i<5;i++)
- {
-   scanf("%d",&a[i]);
-  sum = sum + a[i]; 
- }
- printf("Sum of Array is %d",sum);
-  
+   int N,a[10],i,sum=0;
+   printf("Enter the number of array elements");
+   scanf("%d",&N);
+   printf("Enter the array elements");
+   for(i=0;i<N;i++)
+   {
+     scanf("%d",&a[i]);
+   }
+    for(i=0;i<N;i++)
+  {
+    sum=sum+a[i];
+  }
+  printf("The sum=%d",sum);
   return 0;
 }
